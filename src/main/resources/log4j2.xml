@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="ConsoleLog" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="com.kkotto" level="debug" additivity="false">
+            <AppenderRef ref="ConsoleLog"/>
+        </Logger>
+
+        <Root level="error">
+            <AppenderRef ref="ConsoleLog"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
